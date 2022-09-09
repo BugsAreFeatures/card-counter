@@ -32,9 +32,14 @@
         companyName: "BAF",
         productName: "Card Counter",
         productVersion: "1.0",
+        
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
+      }).then((unityInstance) => {
+              this.unityInstance = unityInstance;
+            }).catch((message) => {
+                alert(message);
+            });
     </script>
       <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
