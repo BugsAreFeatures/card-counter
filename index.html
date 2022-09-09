@@ -74,11 +74,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = "https://raw.githubusercontent.com/BugsAreFeatures/card-counter/main/Build/Builds.loader.js";
+      var loaderUrl = buildUrl + "/Builds.loader.js";
       var config = {
-        dataUrl: "https://raw.githubusercontent.com/BugsAreFeatures/card-counter/main/Build/Builds.data.br",
-        frameworkUrl: "https://raw.githubusercontent.com/BugsAreFeatures/card-counter/main/Build/Builds.framework.js.br",
-        codeUrl: "https://raw.githubusercontent.com/BugsAreFeatures/card-counter/main/Build/Builds.wasm.br",
+        dataUrl: buildUrl + "/Builds.data.br",
+        frameworkUrl: buildUrl + "/Builds.framework.js.br",
+        codeUrl: buildUrl + "/Builds.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BAF",
         productName: "Card Counter",
